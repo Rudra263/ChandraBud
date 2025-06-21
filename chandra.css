@@ -1,0 +1,224 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(247, 236, 236);
+}
+
+
+header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  font-family: Ubuntu;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(124, 86, 86);
+  /* border: 2px solid red; */
+  /* height: 80px; */
+  color: aliceblue;
+  flex-wrap: wrap;
+  position: sticky;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  color: aliceblue;
+
+  /* border: 2px solid blue; */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.left img {
+  display: flex;
+  height: 50px;
+
+}
+
+.mid {
+  display: flex;
+  width: 33%;
+  margin: auto;
+  /* border: 2px solid yellowgreen; */
+
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.navbar li {
+  display: inline-block;
+
+}
+
+.navbar li a {
+  font-size: 18px;
+  color: aliceblue;
+  text-decoration: none;
+  /* margin-top: 15px; */
+  padding: 10px 15px;
+}
+
+.navbar li a:hover {
+  background-color: rgb(138, 47, 47);
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(221, 204, 46);
+  text-decoration: underline;
+}
+
+.right {
+  position: absolute;
+  right: 30px;
+  /* border: 2px solid burlywood; */
+  display: inline-block;
+}
+
+
+.btn {
+  font-family: Ubuntu;
+  padding: 0px 20px;
+  margin: 15px 10px;
+  border: 2px solid yellowgreen;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(119, 118, 24);
+  color: rgb(235, 218, 218);
+}
+
+.hero {
+  background: url('image/binaryBall.jpg') center/cover no-repeat;
+  height: 60vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative;  */
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(124, 86, 86, 0.856);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  color: #d1b464;
+}
+
+.explore-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #d1b464;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.service {
+  /* border: 5px solid rgb(245, 23, 23); */
+  text-align: center;
+  /* padding: 2rem 1rem; */
+}
+
+.service h2 {
+  font-size: 2.5rem;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: antiquewhite;
+  /* border: 2px solid blue; */
+  border-radius: 15px;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card p {
+  font-size: 17px;
+}
+
+.service p {
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+  }
+
+  .left {
+    margin-top: 5px;
+  }
+
+  .mid {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .right {
+    margin-top: 5px;
+    margin-right: 15px;
+    
+  }
+
+  .navbar li a {
+    display: flex;
+    margin: auto;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .overlay h1 {
+    font-size: 22px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 0px 10px;
+    font-size: 12px;
+
+  }
+}
